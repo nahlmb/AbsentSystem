@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Main.MainActivity">
+
+    <!-- toolbar -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2B85FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/shape_back_logo_idn"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/oo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@id/imageView"
+                    app:layout_constraintTop_toTopOf="@id/imageView" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDN ABSEN"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"/>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cons_tool_bar">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/penengah_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_dashboard_kiri"
+            app:layout_constraintEnd_toStartOf="@id/penengah_dashboard"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_dashboard_kanan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/penengah_dashboard" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:text="Assalamualaikum"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/txt_nama_guru_dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abdullah"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#fff"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_status_guru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alhamdulillah Sehat"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView2">
+
+            <TextView
+                android:id="@+id/txt_jam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:text="14:00"
+                android:textStyle="bold"
+                android:textColor="#7E7E7E"
+                android:textSize="32dp"/>
+
+            <TextView
+                android:id="@+id/txt_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginTop="-2dp"
+                android:textSize="16sp"
+                android:textColor="#7E7E7E"
+                android:text="12 January 2014"/>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/penengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/linear_penjelasan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_kiri"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_list_absen"
+        app:layout_constraintTop_toBottomOf="@+id/cons_dashboard">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Absen Mudah dan Asik!"
+            android:textColor="#7E7E7E"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="absen sekarang dengan mudah.."
+            android:textColor="#7E7E7E"
+            android:textStyle="normal"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_tengah"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/icon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_penjelasan" />
+
+    <ImageView
+        android:id="@+id/img_btn_list_absen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/icon1"
+        app:layout_constraintBottom_toBottomOf="@+id/img_tengah"
+        app:layout_constraintStart_toStartOf="@+id/cons_dashboard"
+        app:layout_constraintTop_toTopOf="@+id/img_tengah" />
+
+    <ImageView
+        android:id="@+id/img_kiri"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/icon3"
+        app:layout_constraintBottom_toBottomOf="@+id/img_tengah"
+        app:layout_constraintEnd_toEndOf="@+id/cons_dashboard"
+        app:layout_constraintTop_toTopOf="@+id/img_tengah" />
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
