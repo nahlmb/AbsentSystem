@@ -6,7 +6,7 @@ import com.androidnetworking.AndroidNetworking;
 
 
 public class BaseApp extends Application {
-    public static String BASE_URL = "http://192.168.71.0/absen_idn/index.php/api/";
+    public static String BASE_URL = "http://192.168.43.87/absen_idn/index.php/api/";
 
     @Override
     public void onCreate() {
